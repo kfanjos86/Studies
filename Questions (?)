@@ -1,0 +1,8 @@
+'ovo' > 'uva'    o resultado será:  false
+
+'uva' > 'ovo'    o resultado será: true
+
+mesmo ambas palavras tendo 3 letras, é respeitado a ordem do alfabeto(?)
+
+Quando aplicar o sinal de maior ou igual vai funcionar?
+
