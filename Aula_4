@@ -1,0 +1,32 @@
+# nesse exercício aprenderemos variáveis
+# no powershell se digitar o comando clear, ele vai limpar os resultados dos códigos
+
+#quantidade de pernas
+pernas = 2
+
+#idade da pessoa
+idade = 34
+
+#idade por perna
+idade_por_perna = idade // pernas
+
+membro = "olho"
+
+#mostra a idade por perna
+print(f"tenho {idade_por_perna} anos em cada {membro}")
+
+carros = 100
+espaço_no_carro = 4.0
+motoristas = 30
+passageiros = 90
+carros_indisponíveis = carros - motoristas
+motoristas_que_dirigem = motoristas
+capacidade_carros = carros_indisponíveis * espaço_no_carro
+capacidade_passageiros_por_carro = passageiros / motoristas_que_dirigem
+
+print("Existem", carros, "disponíveis.")
+print("Existem apenas", motoristas, "motoristas disponíveis.")
+print("existirão", carros_indisponíveis, "carros vazios hoje." )
+print("Podemos transportar", capacidade_carros, "pessoas hoje.")
+print("Temos", passageiros, "para transportar hoje.")
+print("Precisamos colocar", capacidade_passageiros_por_carro, "em cada carro.")
