@@ -1,0 +1,5 @@
+# Um comentário, assim vc pode ler seu programa mais tarde.
+# Qualquer coisa depois de # é ignorada pelo Python.
+print ("I could have code like this") # e o comentario depois é ignorado
+# print ("Esse não vai rodar.")
+print ("esse vai rodar")
