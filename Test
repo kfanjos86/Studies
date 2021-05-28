@@ -1,0 +1,8 @@
+def converte_real_para_euro(valor_em_real):
+    ## implementação da conversão
+    return valor_em_euro
+
+valor_inicial_em_real = 50.0
+valor_convertido_em_euro = converte_real_para_euro(valor_inicial_em_real)
+
+print(valor_convertido_em_euro)
