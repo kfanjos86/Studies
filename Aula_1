@@ -1,0 +1,6 @@
+#imprimir Hello Again Esse é o primeiro exemplo usado em linguagem de programação.
+print("Hello Again")
+print ("I like typing this")
+print ("Yay! Printing")
+print ("This is fun!")
+print("Em português, agora vai hein!")
