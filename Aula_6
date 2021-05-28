@@ -1,0 +1,27 @@
+Tipos_de_pessoas = 10
+x = f"Existem {Tipos_de_pessoas} tipos de pessoas."
+
+binaria = "binárias"
+não_binaria = "não binárias"
+y = f"Há quem conheça {binaria} e {não_binaria}."
+
+print(x)
+print(y)
+
+print(f"Eu disse: {x}")
+print(f"Mas também disse: '{y}'")
+
+
+hilário = False
+piada_mais_ou_menos = "Essa piada é engradaça!? {}"
+
+print(piada_mais_ou_menos.format(hilário))
+
+w = "Esse é o lado errado da..."
+e = "da nota com o lado certo."
+
+print(w + e)
+
+texto = "me quer"
+bem = "bem"
+mal = "mal"
