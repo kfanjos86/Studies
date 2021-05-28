@@ -1,0 +1,51 @@
+formatter = "{}, {}, {} e {}"
+
+print(formatter.format("a", "b", "c", "d"))
+print(formatter.format(1, 2, 3, 4))
+
+nome = "Katia"
+idade = "34"
+peso = 80
+
+format2 = "Eu me chamo {}, tenho {} anos, e peso {} quilos"
+
+texto = format2.format(nome, idade, peso)
+
+print(texto)
+
+dia = "06"
+mes = "11"
+ano = "2020"
+
+date = '`{}/{}/{}`'
+date_br = date.format(dia,mes,ano)
+date_us = date.format(mes,dia,ano)
+
+print(date_br)
+print(date_us)
+
+
+#Formatação de hora
+#from sys import argv
+
+#nome, formato, dia, mes, ano = argv
+
+#date = "{}/{}/{}"
+
+#if formato == "us":
+    #date = date.format(mes,dia,ano)
+#else:
+    #date = date.format(dia,mes,ano)
+
+#print(date)
+
+formatter = "{} {} {} {}"
+
+print(formatter.format(1, 2, 3, 4))
+print(formatter.format("one", "two", "three", "four"))
+print(formatter.format( formatter, formatter, formatter, formatter))
+print(formatter.format(
+"Try your",
+"own text here",
+"maybe a poem",
+"Or a song abour fear"))
