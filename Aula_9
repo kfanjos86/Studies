@@ -1,3 +1,47 @@
+Tipos de dados em Python
+
+string
+
+São dados do tipo texto. São escritos entre aspas, podendo ser aspas simples (') ou duplas (").
+
+spotlight¹: Um integer pode ser uma string, mas uma string não pode ser um integer.
+
+Caso declare uma variável com valores numéricos, mas entre aspas, será considerada como string.
+
+Exemplo: peso = ['50', '45','85']
+
+spotlight²: Dados do tipo string não fazem operações matemáticas.
+
+
+
+Integer
+
+São compostas por números inteiros (não possuem casas decimais)
+
+exemplo: numero = (1,50,69,58)
+
+spotlight¹: Não há aspas, sendo assim, é possível realizar operações matemáticas.
+
+
+
+Float
+
+Semelhantes às variáveis do tipo integer, acom a adição das casas decimais. São usadas quando há necessidade de precisão nos dados, como no exemplo do saldo bancário de um indivíduo.
+
+saldo_bancario = (15.65, 85.52, 453,22)
+
+spotlight¹: As casas decimais são separadas por ponto. Virgulas são usadas para separar os valores.
+
+
+
+Boolean
+
+Dados binários, retornarão com condição de true or false. 
+
+
+
+
+
 Formas de armazenar dados em Python: S2
 
 Coleções de dados em python
