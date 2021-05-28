@@ -1,0 +1,61 @@
+Formas de armazenar dados em Python: S2
+
+Coleções de dados em python
+
+Ao escolher um tipo de coleção é útil entender as propriedades desse tipo. Escolher o tipo certo para um determinado conjunto de dados
+é o ponto de partida para escrever o programa.
+
+Ficar atenta à especificidade de cada forma de armazenamento de dados pois, uma escolha equivocada pode resoltar em erro no código.
+
+
+
+List
+
+Coleção ordenada e mutável. Permite dados duplicados.
+
+As lists são usadas para armazenar vários itens em uma única variável.
+
+Os itens da lista são indexados, o primeiro item tem indice 0, o segundo, indice 1, etc.
+
+As lists são criadas usando colchetes:
+
+Exemplo: Lista_compras = ['chocolate', 'arroz', 'milho']
+
+
+
+Tuple
+
+Coleção ordenada e imutável. Permite dados duplicados.
+
+As tuples são usadas para armazenar vários itens em uma única variável.
+
+Uma tuple é uma coleção que é ordenada e imutável.
+
+Tuples são escritas utilizandos parênteses.
+
+exemplo: peso_produto = (15, 50, 63, 58)
+
+
+
+Set
+
+Coleção não ordenada e desindexada. Não permite duplicidade.
+
+Os sets são usados para armazenar vários itens em uma única variável.
+
+São escritos utilizando chaves.
+
+exemplo: lista_compras = {'batata', 'chuchu', 'feijão'}
+
+
+
+Dictionary
+
+Coleção desordenada e mutável. Não permite duplicidade.
+
+São usados para armazenar valores de dados em pares. Geralmente, correspondentes.
+
+Os dictionaries são escritos com chaves {} e usam dois pontos para separação de valores.
+
+exemplo: curso_estudantes = {'José':'Python','Maria':'JAVA','João':'C++'}
+
