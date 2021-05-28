@@ -1,0 +1,12 @@
+
+meu_nome = 'Katia Fernandes dos Anjos'
+minha_idade = 34 #de verdade
+minha_altura = 160 #centímetros
+meus_olhos = 'castanhos'
+meu_cabelo = 'ruivos'
+total = minha_idade + minha_altura
+
+print(f"Vamos convesar sobre {meu_nome}.")
+print(f"Ela mede {minha_altura} centímetros de altura e tem {minha_idade} anos de idade.")
+print(f"Ela tem olhos {meus_olhos} e cabelos {meu_cabelo}.")
+print(f"Se eu adicionar {minha_idade} e {minha_altura} eu tenho {total}.")
