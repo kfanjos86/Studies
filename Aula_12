@@ -1,0 +1,291 @@
+Funções, condições e Loops em python
+
+Úteis para a criação de rotinas em python.
+
+Funções são linhas de código organizadas e agrupadas que vão cumprir uma função em nosso código. Uma função pode agrupar condições, que são argumentos que desejamos que sejam satisfeitos.
+
+O Loop são repetições que geralmente abarcam condições que são criadas para auxiliar o desenvolvimento das rotinas.
+
+IF
+
+O if em python funciona como uma forma de colocar condições no código. Traduzir do inglês = se. 
+
+IF é muito utilizado em loops ou quando desejamos condições em nosso código.
+
+exemplo:
+
+y= 35
+x= 200
+if x > y:
+ print('A variáve x é maior do que a variável y')
+
+
+In 
+if a == c:
+  print('A é igual a C')
+
+Diferente
+
+if a != b:
+  print('A é diferente de B')
+
+Menor que
+
+if a < b:
+  print('A é menor do que B')
+
+Menor ou igual que
+
+if a <= b:
+  print('A é menor ou igual do que B')
+
+Maior que
+
+if b > c:
+  print('B é maior do que C')
+
+
+if b > c:
+  print('B é maior do que C')
+
+
+ELIF
+
+Junção das palavras ELSE + IF. Em python utilizar a condição if somente uma vez, todas as demais devem ser elif (E se)
+
+y= 35
+x= 200
+if x > y:
+ print('A variáve x é maior do que a variável y')
+elif x < y:
+print('A variáve y é maior do que a variável x')
+
+elif
+
+idade = int(input('Digite a sua idade: '))
+
+if idade >= 18:
+  print('Você já pode dirigir')
+elif idade < 18:
+  print('Você ainda não pode dirigir')
+
+exercicio = int(input('Quantos minutos você se exercita por dia: '))
+
+if exercicio < 30:
+  print('Você deveria se exercitar mais')
+elif exercicio >= 30 and exercicio <= 60:
+  print('Você está no caminho certo')
+elif exercicio > 60 and exercicio <= 120:
+  print('Você é um(a) atleta')
+else:
+  print('Uau, você se exercita muito')
+
+
+LOOPS
+
+Formas de criar rotinas que se repetem até que uma ou várias condições sejam satisfeitas.
+Em python, vamos estudar duas formas de loop: 'for' e 'While'.
+
+Loops
+
+trabalho = input('Você deve trabalhar hoje? ')
+dia = input('O dia está bonito? ')
+preguica = input('Você está com preguica? ')
+
+# Loop da vida
+
+if trabalho == 'sim':
+  print('É uma pena')
+elif trabalho == 'não':
+  print('Aproveite o dia')
+
+if dia == 'sim' and trabalho == 'não':
+  print('Aproveite para caminhar')
+elif dia == 'não' and trabalho == 'não':
+  print('Aproveite e assista um filme')
+
+if preguica == 'sim' and trabalho == 'não':
+  print('Aproveita e dorme mais')
+elif preguica == 'não' and trabalho == 'não':
+  print('Que tal estudar Python?')
+
+For
+
+loop útil para a iteração sobre uma sequência (ou é uma list, uma tuple, um dictionary, um set ou uma string)
+
+Com o "for" podemos executar o conjunto de instruções, uma vez para cada item em uma list, tuple, set, etc.
+
+numeros=(1,2,3,4,5,6,7)
+for i in numeros:
+ print(i)
+
+For
+
+for x in variavel:
+  print(x)
+For em Listas
+
+cor = ['verde', 'amarelo', 'azul', 'cinza', 'vermelho']
+In [76]:
+for x in cor:
+  print(x)
+
+For em strings
+
+for i in 'pneumoultramicroscopicossilicovulcanoconiótico':
+  print(i)
+
+For e break
+
+numeros = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+for x in numeros:
+  print(x)
+
+for x in numeros:
+  print(x)
+  if x == 7:
+    break
+
+
+While
+
+While faz com que o python execute um loop enquanto um, ou um conjunto de argumentos, seja satisfeito. Quando todos os argumentos forem satisfeitos o loop deixa de ser executado e imprime o resultado.
+
+While é utilizado quando não se conhece o tamanho do arquivo ou do conjunto de dados.
+
+
+num = 1
+
+while num < 10:
+  print(num)
+  num += 1
+
+
+Break
+
+num = 1
+while num < 10:
+  print(num)
+  if num == 6:
+    break
+  num += 1
+
+Continue
+
+num = 0
+
+while num < 21:
+  num += 1
+  if num == 12:
+    continue
+  print(num)
+
+Range
+
+A função range() retorna uma sequência de números, começando a partir de 0 por padrão, e acrescente um valor (por padrão) e para um valor antes do estipulado.
+
+é utilizado juntamente com o for para executar contagens com o python.
+
+# Função range - argumentos
+# range(inicio, termino, salto)
+
+for i in range(1, 21):
+  print(i)
+
+for i in range(0, 51, 5):
+  print(i)
+
+Def
+
+Utilizamos o Def para criar funções em python. A criação de funções em python é muito útil quando desejamos facilitar a execução de uma rotina.
+
+Existe a possibilidade de criarmos nossas próprias funções com o def.
+
+def soma(x,y):
+  print(x + y)
+
+soma(10,5)
+
+soma(50,50)
+
+def imc(peso, altura):
+  imc = peso/(altura**2)
+  if imc < 18.5:
+    print('Magreza')
+  elif imc >= 18.5 and imc <= 24.9:
+    print('Normal')
+  elif imc >= 25.0 and imc <=29.9:
+    print('Sobrepeso')
+  elif imc >= 30.0 and imc <= 39.9:
+    print('Obesidade I')
+  else:
+    print('Obesidade II')
+  return
+
+imc(80, 1.92)
+
+
+Funções Anônimas (Lambda)
+
+Utilizamos o lambda para criar funções, assim como fazemos com o def. Entretantao o lambda, não nomeamos as funções, por isso o termo "função anônima". São úteis em casos específicos em que vamos utilizar uma função poucas vezes.
+
+utilizando o Def:
+
+def soma(x, y):
+  print(x + y)
+
+soma(10,5)
+
+Utilizando o lambda:
+
+soma = lambda x, y: x + y
+
+x = lambda y : y + 20
+
+print(x(5))
+
+x = lambda valor_1, valor_2 : valor_1 * valor_2
+
+print(x(10, 3))
+
+x = lambda x, y, z : x + y + z
+
+print(x(10, 10, 30))
+
+def nome_funcao(n):
+  return lambda a : a * n
+
+multiplicador = nome_funcao(6) # Aqui eu digito o valor pelo qual quero multiplicar
+
+print(multiplicador(10))
+
+lista = [1, 5, 4, 6, 8, 11, 3, 12]
+
+nova_lista = list(filter(lambda x: (x%2 == 0), lista))
+
+print(nova_lista)
+
+
+
+Módulo
+
+Permite organizar logicamente o código. agrupar código relacionado em um módulo torna o código mais fácil de entender e usar.
+
+Um módulo pode definir funções, classes e variáveis. Um módulo também pode incluir um código executável.
+
+Para importar um módulo, utiliza-se o comando "import".
+
+A importação do módulo deve ser feita antes da utilização do mesmo.
+
+import calendar
+import mailbox
+
+Importar partes de um módulo
+
+Também é possível importar partes de um módulo, de forma que seja possivel utilizar apenas uma determinada função e otimizar o tempo e desempenho da máquina.
+
+utiliza-se o comando 'from'
+
+From calendar import hour
+from calendar import days
